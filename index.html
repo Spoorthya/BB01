@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+    <title>BB01</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script src="lib/es5-shim.js"></script>
+    <script src="lib/batman.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+<div data-yield="main">
+</div>
+
+<div data-defineview="app/index">
+    <ul id="items">
+        <li data-foreach-word="wordList">
+            <span data-bind="word.name | prepend 'Word: '"></span>
+            <span data-bind="word.addOneHundred"></span>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</body>
+</html>
